@@ -19,5 +19,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "max-len": [
+      "error",
+      {
+        ignoreComments: true,
+      },
+    ],
+    "import/prefer-default-export": "off",
+  },
 };
