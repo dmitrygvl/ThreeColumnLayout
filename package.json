@@ -1,0 +1,38 @@
+{
+  "name": "three_column_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint . --fix",
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrygvl/ThreeColumnLayout.git"
+  },
+  "author": "dmitrygvl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrygvl/ThreeColumnLayout/issues"
+  },
+  "homepage": "https://github.com/dmitrygvl/ThreeColumnLayout#readme",
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ],
+    "*.{js,css,md}": "prettier --write"
+  }
+}
