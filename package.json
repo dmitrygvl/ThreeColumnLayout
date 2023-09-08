@@ -1,0 +1,19 @@
+{
+  "name": "three_column_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrygvl/ThreeColumnLayout.git"
+  },
+  "author": "dmitrygvl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrygvl/ThreeColumnLayout/issues"
+  },
+  "homepage": "https://github.com/dmitrygvl/ThreeColumnLayout#readme"
+}
