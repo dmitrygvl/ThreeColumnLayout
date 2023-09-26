@@ -9,7 +9,7 @@ body {
 }
 
 .center {
-  padding: 0 calc(50% - 1140px / 2);
+  padding: 0 calc(40% - 1140px / 2);
 }
 
 .item {
@@ -45,8 +45,7 @@ body {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
-  /* align-items: flex-start; */
-  max-width: 120%;
+  max-width: 100%;
 }
 
 .column__left {
@@ -64,7 +63,7 @@ body {
 }
 
 .column__main {
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   width: 43%;
 }
 
@@ -91,9 +90,5 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 32px;
-}
-
-.column__footer {
-  display: block;
-  width: 25%;
+  max-width: 100%;
 }
