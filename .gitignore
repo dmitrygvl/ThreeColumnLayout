@@ -1,4 +1,5 @@
 node_modules
+dist
 coverage
 .eslintcache
-.DS_Store
+.DS_Store 
