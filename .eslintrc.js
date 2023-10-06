@@ -2,8 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true,
   },
-  extends: ["airbnb-base", "eslint-config-prettier"],
+  extends: ["airbnb-base", "prettier"],
   overrides: [
     {
       env: {
@@ -19,13 +20,24 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  plugins: ["jest"],
+  ignorePatterns: ["main.js"],
   rules: {
     "max-len": [
       "error",
       {
+        code: 140,
         ignoreComments: true,
       },
     ],
     "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", { props: false }],
+    "no-shadow": "off",
+    "no-plusplus": "off",
+    "no-unused-vars": "off",
+    "consistent-return": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-await-in-loop": "off",
+    "func-names": "off",
   },
 };

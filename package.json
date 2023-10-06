@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "prettier --check . && eslint .",
-    "lint:fix": "prettier --write . && eslint . --fix",
     "test": "echo \"Error: no test specified\"",
-    "prepare": "husky install"
+    "lint": "prettier --check . && eslint . && stylelint \"**/*.css\"",
+    "lint:fix": "prettier --write . && eslint . --fix  && stylelint \"**/*.css\" --fix",
+    "prepare": "husky install",
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -34,6 +38,9 @@
     "lint-staged": "^14.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-prettier": "^4.0.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
@@ -42,6 +49,7 @@
       "prettier --write",
       "eslint --cache --fix"
     ],
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": "prettier --write",
+    "*.css": "stylelint --fix"
   }
 }
