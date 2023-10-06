@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dmitrygvl/ThreeColumnLayout#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.48.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",

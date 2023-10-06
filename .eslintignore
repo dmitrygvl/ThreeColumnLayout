@@ -1,0 +1,5 @@
+.github
+dist
+coverage
+prettierrc.js
+webpack.config.js
