@@ -3,4 +3,3 @@ dist
 coverage
 .eslintcache
 .DS_Store 
-webpack.config.js
