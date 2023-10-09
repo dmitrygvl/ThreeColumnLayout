@@ -6,12 +6,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
+  mode: "development",
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "[name].[hash].js",
+    filename: "[name].[contenthash].js",
     clean: true,
   },
   devServer: {
@@ -25,7 +26,15 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].[hash].css",
+      filename: "[name].[contenthash].css",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "./src/img/logo.png",
+          to: "./img/",
+        },
+      ],
     }),
   ],
   module: {
@@ -44,6 +53,14 @@ module.exports = {
       {
         test: /\.html$/,
         use: "html-loader",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+        type: "asset/resource",
+        use: ["file-loader"],
+        generator: {
+          filename: "img/[hash][text].png",
+        },
       },
     ],
   },
