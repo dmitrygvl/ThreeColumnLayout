@@ -3,3 +3,4 @@ dist
 coverage
 prettierrc.js
 webpack.config.js
+.cache
