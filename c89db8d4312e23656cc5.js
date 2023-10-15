@@ -1,0 +1,1 @@
+import"./styles/styles.css";import{layoutLogo}from"./modules/imagesImport";const logoImage=document.querySelector(".logo-box");function displayLogo(o){o.innerHTML=`\n  <img src = ${layoutLogo} alt ="Logo image" class = "logo-img"/> \n  `}displayLogo(logoImage);
