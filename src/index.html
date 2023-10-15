@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three column layout</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="container center">
-    <header class="header center item">
-      <img src="img/logo.png" alt="logo" class="logo-img" />
+    <header class="header item">
+      <div id="logo" class="logo-box"></div>
       <h1 class="header-text">
         Three column layout. This is the avesome three column layout, that will
         accommodate any information you have.
       </h1>
     </header>
-    <div class="info-box">
-    <section class="container center">
+    <div class="columns">
+    <section class="container">
       <article class="column-left item">
         <p class="left-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum
@@ -27,7 +25,7 @@
           consequatur veritatis error veniam a dignissimos illo praesentium
           quasi!
         </p>
-        <p class="left-text">
+        <p class="nav-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum
           numquam molestiae illo! Cumque tempora nisi quas porro ab
           reprehenderit! Molestiae necessitatibus ratione reprehenderit quos
@@ -97,7 +95,7 @@
       </article>
     </section>
   </div>
-    <footer class="footer item center">
+    <footer class="footer item">
       <section class="column-footer">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto ipsam
@@ -131,6 +129,7 @@
         </p>
       </section>
     </footer>
-  </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
