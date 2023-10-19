@@ -11,7 +11,17 @@ body {
 .columns {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
+}
+
+.container {
+  /* margin-left: 32px;
+  margin-right: 32px; */
+  padding: 0 calc(50% - 590px);
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .item {
@@ -40,15 +50,6 @@ body {
   width: 650px;
 }
 
-.container {
-  margin-left: 32px;
-  margin-right: 32px;
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  max-width: 100%;
-}
-
 .column-left {
   width: 25%;
   display: flex;
@@ -62,7 +63,7 @@ body {
 
 .column-main {
   padding-bottom: 70px;
-  width: 43%;
+  width: 40%;
 }
 
 .section-main {
