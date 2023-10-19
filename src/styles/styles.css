@@ -17,6 +17,7 @@ body {
 .container {
   /* margin-left: 32px;
   margin-right: 32px; */
+  padding: 0 calc(50% - 590px);
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -50,7 +51,6 @@ body {
 }
 
 .column-left {
-  margin-left: 32px;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,6 @@ body {
 }
 
 .column-right {
-  margin-right: 32px;
   display: block;
   width: 25%;
 }
