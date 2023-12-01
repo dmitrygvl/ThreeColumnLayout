@@ -1,6 +1,7 @@
 node_modules
+.cache
+.vscode
 dist
 coverage
 .eslintcache
 .DS_Store 
-webpack.config.js
